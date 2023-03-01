@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/myst-cam/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRING ME THE PAGE</title>
+    <script type="module" crossorigin src="/myst-cam/assets/index-11b7fbcc.js"></script>
+    <link rel="stylesheet" href="/myst-cam/assets/index-d3bf62ac.css">
+  </head>
+  <body>
+    <div id="app">
+      <video autoplay id="webcam"></video>
+      <video muted loop autoplay id="redstatic"><source src="/myst-cam/redstatic.webm"></video>
+      <video muted loop autoplay id="bluestatic"><source src="/myst-cam/bluestatic.webm"></video>
+      <canvas></canvas>
+      <div id="controls">
+        <button type="button" id="swapcolors">SWAP COLOR</button>
+        <button type="button" id="recordvideo">RECORD FOR <span class="dni"> 3 </span> SECONDS</button>
+      </div>
+      <div id="download"></div>
+    </div>
+    
+  </body>
+  <footer>made by <a target="_blank" href="https://katebagenzo.neocities.org">katey</a> | myst is by cyan worlds</footer>
+</html>
