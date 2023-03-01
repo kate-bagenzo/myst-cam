@@ -1,0 +1,14 @@
+{
+  "name": "myst-cam",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite --port 1234",
+    "build": "rm -rf dist/ && vite build",
+    "preview": "vite preview --port 4321"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  }
+}

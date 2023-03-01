@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRING ME THE PAGE</title>
+  </head>
+  <body>
+    <div id="app">
+      <video autoplay id="webcam"></video>
+      <video muted loop autoplay id="redstatic"><source src="/redstatic.webm"></video>
+      <video muted loop autoplay id="bluestatic"><source src="/bluestatic.webm"></video>
+      <canvas></canvas>
+      <div id="controls">
+        <button type="button" id="swapcolors">SWAP COLOR</button>
+        <button type="button" id="recordvideo">RECORD FOR <span class="dni"> 3 </span> SECONDS</button>
+      </div>
+      <div id="download"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+  <footer>made by <a target="_blank" href="https://katebagenzo.neocities.org">katey</a> | myst is by cyan worlds</footer>
+</html>
