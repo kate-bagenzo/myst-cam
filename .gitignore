@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 <<<<<<< HEAD
+<<<<<<< HEAD
 pnpm-debug.log*
 lerna-debug.log*
 
@@ -24,6 +25,8 @@ dist-ssr
 *.sln
 *.sw?
 =======
+=======
+>>>>>>> 60ed4d134e81d1ef173811c4bc77cc62c512a94a
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -121,4 +124,7 @@ typings/
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
+>>>>>>> 60ed4d134e81d1ef173811c4bc77cc62c512a94a
+=======
 >>>>>>> 60ed4d134e81d1ef173811c4bc77cc62c512a94a
