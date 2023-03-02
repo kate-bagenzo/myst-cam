@@ -44,7 +44,7 @@ navigator.mediaDevices
 
 //start static
 redStatic.play();
-redStatic.play();
+blueStatic.play();
 
 //color settings
 //bring me the red page
@@ -73,11 +73,14 @@ function swapBooks() {
     bookColor = "blue";
     ctx.fillStyle = blueColor;
     bookType = blueBook;
-
+    blueStatic.play();
+    redStatic.pause();
   } else {
     bookColor = "red";
     ctx.fillStyle = redColor;
     bookType = redBook;
+    redStatic.play();
+    blueStatic.pause();
   }
 }
 const swapColors = document.getElementById('swapcolors');
