@@ -103,3 +103,20 @@ footer {
   bottom: 0;
   right: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  #controls {
+    flex-direction: column;
+  }
+
+  #recordvideo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body,
+  canvas,
+  #app {
+    overflow: hidden;
+  }
+}

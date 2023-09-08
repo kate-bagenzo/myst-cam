@@ -3,7 +3,14 @@ import redUrl from '/red.png';
 import blueUrl from '/blue.png';
 
 //variables
-const width = 512;
+let width = 512;
+let staticX = 592;
+let staticY = 200;
+if (window.screen.width < 800) {
+  width = width / 2;
+  staticX = staticX / 2;
+  staticY = staticY / 2;
+}
 const height = width / (4 / 3);
 let video = null;
 let canvas = null;
@@ -60,9 +67,9 @@ const blueColor = "#6161cd";
 //know what color static to draw
 function drawStatic() {
   if (bookColor == "red") {
-    ctx.drawImage(redStatic, 592, 200, redStatic.width / 1.74, redStatic.height / 1.74);
+    ctx.drawImage(redStatic, staticX, staticY, redStatic.width / 1.74, redStatic.height / 1.74);
   } else {
-    ctx.drawImage(blueStatic, 592, 200, blueStatic.width / 1.74, blueStatic.height / 1.74);
+    ctx.drawImage(blueStatic, staticX, staticY, blueStatic.width / 1.74, blueStatic.height / 1.74);
   }
 }
 
@@ -155,15 +162,12 @@ function loop() {
   drawStatic();
   shiftStatic();
   ctx.globalAlpha = staticIntensity;
-  ctx.drawImage(video, 592, 200, video.width / 1.74, video.height / 1.74);
+  ctx.drawImage(video, staticX, staticY, video.width / 1.74, video.height / 1.74);
   ctx.globalAlpha = 0.5;
-  ctx.fillRect(592, 190, video.width / 1.74, video.height / 1.5);
+  ctx.fillRect(staticX, (staticY - 10), video.width / 1.74, video.height / 1.5);
   ctx.globalAlpha = 1;
   ctx.drawImage(bookType, 0, 0, canvas.width, canvas.height);
 }
 
-//drop the book in the fissure, and...
+//drop the book in the fissure
 loop();
-
-// todo:
-// prep for github pages
